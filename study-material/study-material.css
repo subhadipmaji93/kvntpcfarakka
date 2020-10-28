@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Adjusted Font size */
+html {
+    font-size: 16px;
+}
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+}
+
+body {
+    height: 800px;
+}
+
+/* -----------School Name----------------- */
+.name {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #1b1b1b;
+    text-align: center;
+    padding-top: 10px;
+}
+  
+  .name a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ------------------------------Sidebar------------------------------*/
+/* -------------Sidebar-Button--------------- */
+.btn{
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background-color: #1b1b1b;
+    opacity: 0.7;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.btn.click{
+    left: 260px;
+}
+.btn span{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn.click span:before{
+    content: '\f00d';
+}
+/* X-------------Sidebar-Button---------------X */
+
+
+/* -------------Sidebar-Menu--------------- */
+.sidebar{
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    height: 800px;
+    left: -250px;
+    background: #1b1b1b;
+    transition: left 0.4s ease;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.sidebar.show{
+  left: 0px;
+}
+
+nav ul{
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+nav ul li{
+  line-height: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+nav ul li:last-child{
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+nav ul li.active a{
+  color: #fc7e17;
+  background: #1e1e1e;
+  border-left-color: #fc7e17;
+}
+
+nav ul li a:hover{
+  background: #1e1e1e;
+}
+
+nav ul ul{
+  position: static;
+  display: none;
+}
+
+nav ul .material-show.show{
+  display: block;
+}
+
+nav ul ul li{
+  line-height: 35px;
+  border-top: none;
+}
+
+nav ul ul li a{
+  font-size: 20px;
+  color: #e6e6e6;
+  padding-left: 80px;
+}
+
+nav ul li.active ul li a{
+  color: #e6e6e6;
+  background: #1b1b1b;
+  border-left-color: transparent;
+}
+
+nav ul ul li a:hover{
+  color: #fc7e17!important;
+  background: #1e1e1e!important;
+}
+
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+
+nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+/* X-------------Sidebar-Menu---------------X */
+/*X---------------------------Sidebar----------------------------------X*/
+
+/* ----------------------------Content---------------------------------- */
+.stdymatrlhead {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  color: #1b1b1b;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%);
+  border-bottom: 2px solid #1b1b1b;
+}
+
+.cls {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  color: #1b1b1b;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  width: 800px;
+  height: 200px;
+  border: 1px solid #bdc3c7;
+}
+
+tr {
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+
+th,
+td {
+  padding: 6px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#header {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+td {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#header td:hover {
+  background-color: #1e1e1e;
+  box-shadow: none;
+  transform: none;
+}
+
+#content-index td:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+tr td:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+td a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+      width: 90%;
+  }
+}
+
+.disclaimer {
+  position: absolute;
+  top: 700px;
+  font-size: 10px;
+  color: #1b1b1b;
+  padding-left: 10px;
+}
+/* X----------------------------Content----------------------------------X */
+/* ----------------------Footer--------------------------------------------- */
+.footer {
+    position: absolute;
+    top: 800px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 20px;
+    text-align: center;
+}
+  /* X----------------------Footer---------------------------------------------X */
