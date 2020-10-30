@@ -203,16 +203,16 @@ table {
 }
 
 .tbl-1 {
-  top: 900px;
+  top: 500px;
 }
 
 .tbl-2 {
-  top: 1600px;
+  top: 1000px;
   /* display: none; */
 }
 
 .tbl-3 {
-  top: 2100px;
+  top: 1500px;
   /* display: none; */
 }
 
