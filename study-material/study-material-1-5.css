@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    height: 3000px;
+    height: 2200px;
 }
 
 /* -----------School Name----------------- */
@@ -76,7 +76,7 @@ body {
     position: absolute;
     top: 50px;
     width: 250px;
-    height: 3000px;
+    height: 2200px;
     left: -250px;
     background: #1b1b1b;
     transition: left 0.4s ease;
@@ -208,16 +208,14 @@ table {
 
 .tbl-2 {
   top: 1000px;
-  /* display: none; */
 }
 
 .tbl-3 {
   top: 1500px;
-  /* display: none; */
 }
 
 .tbl-4 {
-  top: 2600px;
+  top: 1900px;
 }
 
 tr {
@@ -272,7 +270,7 @@ td a {
 
 .disclaimer {
   position: absolute;
-  top: 2900px;
+  top: 2150px;
   font-size: 10px;
   color: #1b1b1b;
   padding-left: 10px;
@@ -281,7 +279,7 @@ td a {
 /* ----------------------Footer--------------------------------------------- */
 .footer {
     position: absolute;
-    top: 3000px;
+    top: 2200px;
     left: 0;
     width: 100%;
     height: 50px;
